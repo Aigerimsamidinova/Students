@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table
-public class PaymentModel {
+public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
@@ -16,7 +16,7 @@ public class PaymentModel {
     private double sum;
     private String isPayed;
 
-    public PaymentModel(Long id, Student student, LocalDateTime time, double sum, String isPayed) {
+    public Payment(Long id, Student student, LocalDateTime time, double sum, String isPayed) {
         this.id = id;
         this.student = student;
         this.time = time;
@@ -24,7 +24,7 @@ public class PaymentModel {
         this.isPayed = isPayed;
     }
 
-    public PaymentModel() {
+    public Payment() {
     }
 
     public Long getId() {

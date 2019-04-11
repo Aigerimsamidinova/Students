@@ -1,4 +1,7 @@
 package com.example.demo.repository;
 
-public class PaymentRep {
+import com.example.demo.model.Payment;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PaymentRep  extends JpaRepository<Payment, Long> {
 }
